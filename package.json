@@ -1,11 +1,12 @@
 {
-  "name": "helmet-csp",
+  "name": "helmet-csp-uc",
   "author": "Adam Baldwin <baldwin@andyet.net> (http://andyet.net/team/baldwin)",
   "contributors": [
-    "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)"
+    "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)",
+    "zack-lin <linzegia@gmail.com>"
   ],
   "description": "Content Security Policy middleware.",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "keywords": [
     "helmet",
     "security",
@@ -15,13 +16,14 @@
     "security",
     "policy",
     "csp",
-    "xss"
+    "xss",
+    "UC"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/helmetjs/csp.git"
+    "url": "git@github.com:zack-lin/csp.git"
   },
-  "bugs": "https://github.com/helmetjs/csp/issues",
+  "bugs": "https://github.com/zack-lin/csp/issues",
   "scripts": {
     "test": "mocha"
   },
