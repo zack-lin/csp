@@ -4,6 +4,7 @@ var config = require("./lib/config");
 var parseDirectivesFromOptions = require("./lib/parse-directives");
 var browserHandlers = require("./lib/browser-handlers");
 var makePolicyString = require("./lib/make-policy-string");
+var ucPlatformJudge = require("./lib/ucplatform");
 
 module.exports = function csp(options) {
 
@@ -16,6 +17,7 @@ module.exports = function csp(options) {
   return function csp(req, res, next) {
 
     var browser = platform.parse(req.headers["user-agent"]);
+    browser = ucPlatformJudge(req.headers["user-agent"], browser);
     var browserHandler = browserHandlers[browser.name] || browserHandlers.default;
 
     var headerData = browserHandler(browser, directives, options);

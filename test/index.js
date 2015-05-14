@@ -106,6 +106,10 @@ describe("csp middleware", function () {
     "Android 4.4.3": {
       string: "Mozilla/5.0 (Linux; Android 4.4.3; HTC_One Build/KTU84L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36",
       header: "Content-Security-Policy"
+    },
+    "UC 10.4.1.567 Android 4.4.4": {
+      string: "Mozilla/5.0 (Linux; U; Android 4.4.4; zh-CN; HM NOTE 1LTE Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/10.4.1.567 U3/0.8.0 Mobile Safari/534.30",
+      header: "X-WebKit-CSP"
     }
   };
 
