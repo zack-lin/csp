@@ -6,7 +6,7 @@
     "zack-lin <linzegia@gmail.com>"
   ],
   "description": "Content Security Policy middleware.",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "keywords": [
     "helmet",
     "security",
